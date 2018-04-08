@@ -12,8 +12,9 @@ test:
   database: freelance_camp_proposal_test
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
   encoding: unicode
+  pool: 5
   database: freelance_camp_proposal_production
   username: freelance_camp_proposal
   password: <%= ENV['FREELANCE_CAMP_PROPOSAL_DATABASE_PASSWORD'] %>
